@@ -11277,7 +11277,6 @@ img {
 }
 
 
-
 .tab button:hover {
   background-color: rgb(206, 137, 137);
 }
@@ -11297,7 +11296,24 @@ img {
   width: 90%;
   text-align: center;
   position: relative;
-  right: 25px;
+ 
+}
+
+div {
+  border: 30px solid black;
+  background-color: rgb(206, 135, 135);
+  padding-right: 30px;
+  padding-left: 50px;
+}
+
+
+
+.aboutme {
+  border: 25px solid rgb(0, 0, 0);;
+}
+
+.art {
+  background-color: green;
 }
 
 div {
