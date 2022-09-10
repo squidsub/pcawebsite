@@ -78,7 +78,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Courier New', Courier, monospace;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -11216,6 +11216,17 @@ header.masthead .site-heading .h1 {
   text-align: center;
 }
 
+.mytitle {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bolder;
+  margin: 30px;
+}
+
+.tablinks {
+  display:inline-block;
+}
+
 .post-preview > a {
   color: #212529;
 }
@@ -11262,12 +11273,12 @@ img {
   overflow: hidden;
   border: 3px solid rgb(0, 0, 0);
   background-color: #6d3838;
+  text-align: center;
 }
 
 
 .tab button {
   background-color: inherit;
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
@@ -11299,24 +11310,22 @@ img {
  
 }
 
-div {
-  border: 30px solid black;
-  background-color: rgb(206, 135, 135);
-  padding-right: 30px;
-  padding-left: 50px;
-}
-
 
 
 .aboutme {
-  border: 25px solid rgb(0, 0, 0);;
+  border: 4px solid rgb(0, 0, 0);;
+  text-align: center;
+  margin-top: 20px;
+  width: 90%;
+  padding: 1px 12px;
+  
 }
 
 .art {
-  background-color: green;
+  border: 4px solid rgb(0, 0, 0);;
 }
 
-div {
+oodiv {
   border: 30px solid black;
   background-color: rgb(206, 135, 135);
   padding-right: 30px;
