@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Van Howards</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet">
-		<meta charset="UTF-8">
-    
+  <title>Van Howards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" > -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/pages.css"  rel="stylesheet">
+  <script src="js/scripts.js"></script>
+
 </head>
+
 <body>
   <div class="mytitle">Welcome to my website!</div>
 
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'aboutme')"><b>About me</b></button>
-  <button class="tablinks" onclick="openCity(event, 'art')"><b>Art</b></button>
-  <button class="tablinks" onclick="openCity(event, 'Math')"><b>Math</b></button>
-  <button class="tablinks" onclick="openCity(event, 'FOSI')"><b>FOSI</b></button>
-  <button class="tablinks" onclick="openCity(event, 'Spanish')"><b>Spanish</b></button>
-</div>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'aboutme')"><b>About me</b></button>
+    <button class="tablinks" onclick="openCity(event, 'art')"><b>Art</b></button>
+    <button class="tablinks" onclick="openCity(event, 'math')"><b>Math</b></button>
+    <button class="tablinks" onclick="openCity(event, 'fosi')" title=""><b>FOSI</b></button>
+    <button class="tablinks" onclick="openCity(event, 'spanish')"><b>Spanish</b></button>
+    <button class="tablinks" onclick="openCity(event, 'ela')" title="English Learning Arts"><b>ELA</b></button>
+  </div>
 
-<div id="aboutme" class="tabcontent aboutme">
-  <br>
-  <h3>My name is Robert, but I go by <b>Van</b>🚐</h3>
-  <br>
-  <h4> Description of myself :</h4>
-  <h6> I am tall and have brown hair.</h6>
-  <br>
-  <h4> Hobbies</h4>
-  <ul>
-    <li><h5>I love playing guitar🎸</h5></li>
-    <li><h5>I love building things🛠️</h5></li>
-    <li><h5>I like to play strategy games💡</h5></li>
-  </ul>
-  <img src="https://images.squarespace-cdn.com/content/v1/58868019be6594eccdf189a7/1575758869438-CSCY0DNNQONRXK7VYR0F/front_MG_1640.jpg?format=2500w" alt="Guitar" width="600" height="250">
-</div>
+  <div id="aboutme" class="tabcontent aboutme">
+    <br>
+    <h1>My name is Robert, but I go by <b>Van</b>🚐</h1>
+    <br>
+    <h2> Description of myself :</h2>
+    <h3> I am tall and have brown hair.</h3>
+    <br>
+    <h3> Hobbies</h3>
+    <ul>
+      <li>
+        <h2>I love playing guitar🎸</h2>
+      </li>
+      <li>
+        <h3>I love building things🛠️</h3>
+      </li>
+      <li>
+        <h2>I like to play strategy games💡</h2>
+      </li>
+    </ul>
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/58868019be6594eccdf189a7/1575758869438-CSCY0DNNQONRXK7VYR0F/front_MG_1640.jpg?format=2500w"
+      alt="Guitar" width="600" height="250">
+  </div>
 
-<div id="Math" class="tabcontent">
-  <h3>Math</h3>
-  <p>This is for math.</p> 
-</div>
+  <div id="math" class="tabcontent">
+    <h3>Math</h3>
+    <p>This is for math.</p>
+  </div>
 
-<div id="Spanish" class="tabcontent"> 
-  <h3>Spanish<h3>
-  <p>This is for Spanish.</p> 
-</div>
+  <div id="spanish" class="tabcontent">
+    <h3>Spanish<h3>
+        <p>This is for Spanish.</p>
+  </div>
 
-<div id="FOSI" class="tabcontent">
-  <h3>FOSI</h3>
-  <p>This is for FOSI</p>
-</div>
+  <div id="fosi" class="tabcontent">
+    <h3>FOSI</h3>
+    <p>This is for FOSI</p>
+  </div>
 
-<div id="art" class="tabcontent art">
-  <h3>Art</h3>
-  <p>This is for Art.</p>
-</div>
+  <div id="art" class="tabcontent art">
+    <h3>Art</h3>
+    <p>This is for Art.</p>
+  </div>
 
-<div id="ELA" class="tabcontent">
-  <h3>Welcome to my ELA stuff</h3>
-  <p>This is for ELA stuff.</p>
-</div>
+  <div id="ela" class="tabcontent">
+    <h3>Welcome to my ELA stuff</h3>
+    <p>This is for ELA stuff.</p>
+  </div>
 
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
 </body>
-</html> 
 
+</html>
